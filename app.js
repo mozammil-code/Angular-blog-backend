@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const moviesRouter=require('./Routes/moviesRoutes')
 const blogRouter=require('./Routes/blogroute')
-const checkId=require('./Controllers/moviesController')
+//const checkId=require('./Controllers/moviesController')
 
 
 
@@ -179,7 +179,7 @@ app.use((req,res,next)=>{
 // moviesRouter.route('/api/v1/movies/:id').get(getMovie).patch(updateMovie).delete(deleteMovie)
 
 app.use('/api/v1/blog',blogRouter)
-app.use('/api/v1/movies',moviesRouter)
+//app.use('/api/v1/movies',moviesRouter)
 
 
 
