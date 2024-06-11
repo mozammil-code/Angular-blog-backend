@@ -46,7 +46,9 @@ const PORT = process.env.PORT || 3000;
 //     console.log('Error occured while saving data '+err)
 // })
 
-
+app.get('/',(req,res)=>{
+    res.send("This is home Page")
+})
 
 //const PORT = 3000;
 app.listen(PORT, () => {
